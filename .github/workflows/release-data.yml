@@ -1,0 +1,43 @@
+name: Release data
+
+# Refreshes release.json every hour, and as soon as the app repo publishes a
+# release (repository_dispatch, type "release"), so the site reflects the latest
+# release assets, checksums and GitHub star count without manual edits.
+on:
+  schedule:
+    - cron: "0 * * * *"
+  repository_dispatch:
+    types: [release]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-data
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add release.json
+          git diff --staged --quiet || (git commit -m "Refresh release data" && git push)

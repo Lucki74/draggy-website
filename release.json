@@ -1,0 +1,99 @@
+{
+  "version": "3.0.11",
+  "build": 11,
+  "tag": "b-11",
+  "date": "2026-11-13",
+  "stars": 7,
+  "assets": {
+    "windows-exe": {
+      "name": "draggy_setup.exe",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/draggy_setup.exe",
+      "size": 67675821,
+      "sha512": "93bed605460c3866d34b8e16a2fe1ce9f9694cb90be0db4181de9f4a5ea0887e707c00b9f29c9ae59a1439a61f5f01eaa718b0fbcc104ecdf39705ef3a92e707"
+    },
+    "macos-zip": {
+      "name": "Draggy-3.0.11-macos-arm64.zip",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/Draggy-3.0.11-macos-arm64.zip",
+      "size": 17266259
+    },
+    "linux-deb": {
+      "name": "draggy_3.0.11-1_amd64.deb",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/draggy_3.0.11-1_amd64.deb",
+      "size": 7640396
+    },
+    "linux-rpm": {
+      "name": "draggy-3.0.11-1.x86_64.rpm",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/draggy-3.0.11-1.x86_64.rpm",
+      "size": 9106017
+    }
+  },
+  "recent": [
+    {
+      "tag": "b-11",
+      "build": 11,
+      "version": "3.0.11",
+      "date": "2026-11-13",
+      "html_url": "https://github.com/Lucki74/draggy/releases/tag/b-11",
+      "notes": {
+        "updates": [
+          "The Windows app now runs on Tauri instead of Electron. Your settings, chats and saved keys carry over, and the old install is removed after the upgrade",
+          "Agent commands on Windows run in a sandbox that only sees the project folder and the toolchains on your PATH",
+          "npm, npx, vitest and other Node tools ask once and then run outside the sandbox, where they work",
+          "Always allow now covers a command prefix, so allowing `npm run` covers every script",
+          "The browser pane blocks more ads, including scriptlet filters, and its popped-out window has a bar of its own",
+          "Window controls are drawn in the app's title bar"
+        ],
+        "fixes": [
+          "Node commands no longer hang in the sandbox and get retried for dozens of steps",
+          "The administrator prompt for the sandbox appears once per machine, not at every launch",
+          "Sandboxed commands can list the folders above the project, so PowerShell and `dir` work there"
+        ]
+      }
+    },
+    {
+      "tag": "b-10",
+      "build": 10,
+      "version": "3.0.10",
+      "date": "2026-11-09",
+      "html_url": "https://github.com/Lucki74/draggy/releases/tag/b-10",
+      "notes": {
+        "updates": [
+          "Draggy updates itself on Windows, macOS and Linux at startup",
+          "Every tool call shows live in the chat",
+          "Read only tool calls run in parallel",
+          "New deep research, fact check",
+          "Assistant turns are redesigned and way better",
+          "Russian replaces Chinese as an interface language",
+          "AMD graphics cards use the ROCm build of llama.cpp automatically"
+        ],
+        "fixes": [
+          "Removed the broken Gemini account provider"
+        ]
+      }
+    },
+    {
+      "tag": "b-9",
+      "build": 9,
+      "version": "3.0.9",
+      "date": "2026-10-31",
+      "html_url": "https://github.com/Lucki74/draggy/releases/tag/b-9",
+      "notes": {
+        "updates": [
+          "Commands in Code mode can keep running as background terminal tasks while you keep chatting",
+          "The statistics tab is rebuilt, with a cost section, budgets and editable prices",
+          "Image generation accepts reference images",
+          "Provider model lists refresh on their own",
+          "AMD graphics cards can use the ROCm build of llama.cpp, switched on under Settings, Models (off by default)",
+          "The model list shows each model's format",
+          "Embedding models show an icon instead of a second tag",
+          "The message queue card is easier to read and use"
+        ],
+        "fixes": [
+          "The question tool works again in chat",
+          "Removed the Use for Chat and Use for Code buttons from model settings",
+          "Removed the new chat and extensions hints from settings"
+        ]
+      }
+    }
+  ]
+}

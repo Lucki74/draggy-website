@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A bug or idea for the app
+    url: https://github.com/Lucki74/draggy/issues/new/choose
+    about: Problems with Draggy itself go to the app's repo.

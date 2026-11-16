@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T00:00:00Z",
+  "title": "Design System: draggy.org",
+  "extensions": {
+    "colorMeta": {
+      "ember": { "role": "primary", "displayName": "Ember", "canonical": "#ff7a2f", "tonalRamp": ["#3a1504", "#5e2107", "#8a300b", "#b8410f", "#e25a1a", "#ff7a2f", "#ffa56e", "#ffd6ba"] },
+      "ember-light": { "role": "primary", "displayName": "Ember (light theme)", "canonical": "#c2410c", "tonalRamp": ["#2e0f03", "#521b05", "#7a2807", "#a8370a", "#c2410c", "#e0662e", "#f3a27a", "#fbdcca"] },
+      "ember-ink": { "role": "primary", "displayName": "Ember Ink", "canonical": "#170800" },
+      "ember-link": { "role": "primary", "displayName": "Ember Link", "canonical": "#ff9a5e" },
+      "ember-soft": { "role": "primary", "displayName": "Ember Wash", "canonical": "rgba(255, 122, 47, 0.12)" },
+      "ember-glow": { "role": "primary", "displayName": "Ember Glow", "canonical": "rgba(255, 100, 30, 0.34)" },
+      "night-base": { "role": "neutral", "displayName": "Night Base", "canonical": "#0a0c10", "tonalRamp": ["#07090c", "#0a0c10", "#11141a", "#1a1e26", "#222731", "#333a46", "#9ba3b1", "#eceef2"] },
+      "night-panel": { "role": "neutral", "displayName": "Night Panel", "canonical": "#11141a" },
+      "night-raised": { "role": "neutral", "displayName": "Night Raised", "canonical": "#1a1e26" },
+      "night-hover": { "role": "neutral", "displayName": "Night Hover", "canonical": "#181c24" },
+      "night-rule": { "role": "neutral", "displayName": "Night Rule", "canonical": "#222731" },
+      "night-rule-strong": { "role": "neutral", "displayName": "Night Strong Rule", "canonical": "#333a46" },
+      "night-text": { "role": "neutral", "displayName": "Night Text", "canonical": "#eceef2" },
+      "night-text-muted": { "role": "neutral", "displayName": "Night Muted Text", "canonical": "#9ba3b1" },
+      "paper-base": { "role": "neutral", "displayName": "Paper Base", "canonical": "#f7f4ef", "tonalRamp": ["#17130f", "#5c544a", "#c8bdaf", "#e3dcd2", "#efe9e1", "#f0ebe4", "#f7f4ef", "#ffffff"] },
+      "paper-panel": { "role": "neutral", "displayName": "Paper Panel", "canonical": "#ffffff" },
+      "paper-raised": { "role": "neutral", "displayName": "Paper Raised", "canonical": "#efe9e1" },
+      "paper-text": { "role": "neutral", "displayName": "Paper Text", "canonical": "#17130f" },
+      "paper-text-muted": { "role": "neutral", "displayName": "Paper Muted Text", "canonical": "#5c544a" },
+      "diff-add": { "role": "neutral", "displayName": "Diff Add", "canonical": "#3fb950" },
+      "diff-del": { "role": "neutral", "displayName": "Diff Del", "canonical": "#f85149" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The home hero heading only." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles: download, wiki, error, 404." },
+      "headline-section": { "displayName": "Headline Section", "purpose": "Section headings on Persuade pages." },
+      "title": { "displayName": "Title", "purpose": "Card and step headings." },
+      "title-wiki": { "displayName": "Wiki Title", "purpose": "Wiki h2." },
+      "lede": { "displayName": "Lede", "purpose": "Muted paragraph under a heading, max 62ch." },
+      "body": { "displayName": "Body", "purpose": "Running text, ss01 and ss02 on." },
+      "label": { "displayName": "Label", "purpose": "Nav, pills, tabs, table headers, meta. Sentence case, no tracking." },
+      "mono": { "displayName": "Mono", "purpose": "Counters, star counts, code." }
+    },
+    "shadows": [
+      { "name": "elev-0", "value": "0 1px 2px rgba(0, 0, 0, 0.3)", "purpose": "Hairline contact (dark). Light theme uses warm rgba(60, 38, 20, 0.08)." },
+      { "name": "elev-1", "value": "0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 16px -6px rgba(0, 0, 0, 0.5)", "purpose": "Every card at rest." },
+      { "name": "elev-2", "value": "0 1px 3px rgba(0, 0, 0, 0.3), 0 16px 40px -12px rgba(0, 0, 0, 0.6)", "purpose": "Hovered buttons, default model route." },
+      { "name": "elev-3", "value": "0 2px 8px rgba(0, 0, 0, 0.35), 0 40px 100px -24px rgba(0, 0, 0, 0.75)", "purpose": "App window, screenshots, recommended download, hovered cards." },
+      { "name": "ember-underglow", "value": "inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 8px 24px -8px rgba(255, 100, 30, 0.34)", "purpose": "Primary button only." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Shadow and transform transitions on cards and buttons." },
+      { "name": "ease-enter", "value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "Entrance keyframes: slide, rise, settle, 0.35 to 0.6s." },
+      { "name": "hover-quick", "value": "0.15s", "purpose": "Colour and background changes on links, tabs, pills." },
+      { "name": "scroll-scrub", "value": "ease = 1 - (1 - t)^3, per scroll position", "purpose": "Hero window turn, block reveal, pinned studio; off under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "hero-split", "value": "min-width 1100px" },
+      { "name": "header-tight", "value": "max-width 1040px" },
+      { "name": "two-column", "value": "max-width 960px" },
+      { "name": "wiki-pill-row", "value": "max-width 900px" },
+      { "name": "lang-icon-only", "value": "max-width 860px" },
+      { "name": "single-column", "value": "max-width 680px" },
+      { "name": "header-compact", "value": "max-width 420px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The download action. Ember fill, fully round, rises toward the pointer.",
+      "html": "<button class=\"ds-btn\">Download for Windows</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 999px; border: 1px solid transparent; background-color: var(--accent, #ff7a2f); color: var(--accent-ink, #170800); box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 8px 24px -8px var(--glow, rgba(255,100,30,0.34)); font-family: \"Mona Sans\", system-ui, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: -0.005em; cursor: pointer; transition: background-color 0.2s, box-shadow 0.3s cubic-bezier(0.16,1,0.3,1), transform 0.2s cubic-bezier(0.16,1,0.3,1); } .ds-btn:hover { background-color: var(--accent-hover, #ff8f4f); transform: translateY(-2px); box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 16px 40px -12px rgba(0,0,0,0.6); } .ds-btn:active { transform: translateY(1px) scale(0.99); } .ds-btn:focus-visible { outline: 2px solid var(--accent, #ff7a2f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action beside the primary, e.g. GitHub.",
+      "html": "<button class=\"ds-btn-ghost\">View on GitHub</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 999px; border: 1px solid var(--border-dark, #333a46); background: transparent; color: var(--text-main, #eceef2); font-family: \"Mona Sans\", system-ui, sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: background-color 0.2s, box-shadow 0.3s, transform 0.2s; } .ds-btn-ghost:hover { background-color: var(--hover-bg, #181c24); transform: translateY(-2px); box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 16px 40px -12px rgba(0,0,0,0.6); } .ds-btn-ghost:active { transform: translateY(1px) scale(0.99); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--accent, #ff7a2f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Translucent sticky header: muted pill links and the inverted download CTA.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Features</a><a href=\"#\">Wiki</a><a href=\"#\" class=\"ds-nav-cta\">Download</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; padding: 14px 24px; background-color: color-mix(in srgb, var(--bg-base, #0a0c10) 72%, transparent); backdrop-filter: saturate(1.6) blur(16px); border-bottom: 1px solid var(--border-light, #222731); font-family: \"Mona Sans\", system-ui, sans-serif; } .ds-nav a { position: relative; padding: 6px 12px; border-radius: 999px; font-size: 14px; font-weight: 500; color: var(--text-muted, #9ba3b1); text-decoration: none; transition: color 0.15s, background-color 0.15s; } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--text-main, #eceef2); background-color: var(--hover-bg, #181c24); } .ds-nav a:focus-visible { outline: 2px solid var(--accent, #ff7a2f); outline-offset: 3px; } .ds-nav .ds-nav-cta { margin-inline-start: auto; min-height: 36px; padding: 6px 16px; background-color: var(--text-main, #eceef2); color: var(--bg-base, #0a0c10); font-weight: 600; } .ds-nav .ds-nav-cta:hover { opacity: 0.88; background-color: var(--text-main, #eceef2); color: var(--bg-base, #0a0c10); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The .box panel: 20px corners, 1px rule, Elev 1, lifts on hover.",
+      "html": "<div class=\"ds-card\"><h3>Runs on your computer</h3><p>GGUF models, no account, no API key.</p></div>",
+      "css": ".ds-card { display: grid; gap: 12px; padding: 26px; background-color: var(--bg-panel, #11141a); border: 1px solid var(--border-light, #222731); border-radius: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 6px 16px -6px rgba(0,0,0,0.5); color: var(--text-main, #eceef2); font-family: \"Mona Sans\", system-ui, sans-serif; transition: box-shadow 0.3s cubic-bezier(0.16,1,0.3,1), transform 0.3s cubic-bezier(0.16,1,0.3,1), border-color 0.2s; } .ds-card h3 { margin: 0; font-size: 19px; font-weight: 620; letter-spacing: -0.01em; } .ds-card p { margin: 0; font-size: 14.5px; font-weight: 500; color: var(--text-muted, #9ba3b1); } .ds-card:hover { transform: translateY(-2px); box-shadow: 0 2px 8px rgba(0,0,0,0.35), 0 40px 100px -24px rgba(0,0,0,0.75); border-color: var(--text-main, #eceef2); }"
+    },
+    {
+      "name": "Pill",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Small label; the accent variant carries the ember wash.",
+      "html": "<span class=\"ds-pill\">Windows</span> <span class=\"ds-pill ds-pill-accent\">Default</span>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border: 1px solid var(--border-light, #222731); border-radius: 9px; font-family: \"Mona Sans\", system-ui, sans-serif; font-size: 11.5px; font-weight: 600; color: var(--text-muted, #9ba3b1); white-space: nowrap; transition: transform 0.15s, color 0.15s, border-color 0.15s; } .ds-pill:hover { transform: translateY(-2px); border-color: var(--text-main, #eceef2); color: var(--text-main, #eceef2); } .ds-pill-accent { background-color: var(--accent-soft, rgba(255,122,47,0.12)); border-color: transparent; color: var(--link, #ff9a5e); }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "The model table search field.",
+      "html": "<input class=\"ds-input\" type=\"search\" placeholder=\"Search models\" />",
+      "css": ".ds-input { padding: 10px 14px; font-family: \"Mona Sans\", system-ui, sans-serif; font-size: 14px; font-weight: 600; color: var(--text-main, #eceef2); background-color: var(--bg-panel, #11141a); border: 1px solid var(--border-light, #222731); border-radius: 10px; } .ds-input:focus-visible { outline: 2px solid var(--text-main, #eceef2); outline-offset: 2px; }"
+    },
+    {
+      "name": "Wiki Sidebar Link",
+      "kind": "nav",
+      "refersTo": "wiki-nav-link",
+      "description": "Sidebar link; current page is the inverted Raised state. Below 900px these become a sideways-scrolling pill row.",
+      "html": "<ul class=\"ds-wiki-nav\"><li><a href=\"#\" aria-current=\"page\">Install</a></li><li><a href=\"#\">Models</a></li><li><a href=\"#\">Troubleshooting</a></li></ul>",
+      "css": ".ds-wiki-nav { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; width: 236px; font-family: \"Mona Sans\", system-ui, sans-serif; } .ds-wiki-nav a { display: block; padding: 7px 12px; border-radius: 9px; font-size: 14px; font-weight: 600; color: var(--text-muted, #9ba3b1); text-decoration: none; transition: transform 0.15s, background-color 0.15s, color 0.15s; } .ds-wiki-nav a:hover { background-color: var(--hover-bg, #181c24); color: var(--text-main, #eceef2); transform: translateX(3px); } .ds-wiki-nav a[aria-current=\"page\"] { background-color: var(--bg-inverted, #1a1e26); color: var(--text-inverted, #eceef2); } .ds-wiki-nav a:focus-visible { outline: 2px solid var(--accent, #ff7a2f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Wiki Pill Row (narrow)",
+      "kind": "nav",
+      "refersTo": "wiki-nav-pill-narrow",
+      "description": "The wiki sidebar below 900px: one row, scrolls sideways, faded edges, no scrollbar.",
+      "html": "<nav class=\"ds-wiki-row\"><a href=\"#\" aria-current=\"page\">Install</a><a href=\"#\">Models</a><a href=\"#\">Providers</a><a href=\"#\">Troubleshooting</a><a href=\"#\">Privacy</a></nav>",
+      "css": ".ds-wiki-row { display: flex; align-items: center; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 2px 24px 12px; border-bottom: 1px solid var(--border-light, #222731); mask-image: linear-gradient(90deg, transparent, #000 24px, #000 calc(100% - 24px), transparent); font-family: \"Mona Sans\", system-ui, sans-serif; max-width: 360px; } .ds-wiki-row a { flex: none; white-space: nowrap; padding: 6px 12px; border: 1px solid var(--border-light, #222731); border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--text-muted, #9ba3b1); text-decoration: none; transition: background-color 0.15s, color 0.15s; } .ds-wiki-row a:hover { background-color: var(--hover-bg, #181c24); color: var(--text-main, #eceef2); } .ds-wiki-row a[aria-current=\"page\"] { background-color: var(--bg-inverted, #1a1e26); color: var(--text-inverted, #eceef2); } .ds-wiki-row a:focus-visible { outline: 2px solid var(--accent, #ff7a2f); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Workshop",
+    "overview": "A dark room with one ember light in it. The site is a quiet, near-black workshop with a faint blue cast, so that the ember orange is the only warm thing in view. Surfaces are calm, thin-ruled panels in the manner of Linear, Zed and Raycast; the hero carries an Apple and Framer style product stage, with a real Draggy window that turns and settles as the page scrolls. The light theme is the same room by day: warm paper under a lamp, the ember darkened until it holds up as small text on white.\n\nDensity is generous on the Persuade surfaces (home, download) and compact on the Read surfaces (wiki, privacy, error pages). Headlines are big, tight and heavy; everything else is small, medium weight and muted. A film of grain lies over every page so the dark reads as a room rather than a flat fill. Motion is tied to scroll position rather than a clock, and is switched off entirely for reduced-motion users.\n\nBoth themes follow the visitor's system setting until they choose one with the toggle, which is remembered. The dark theme is the primary design; the light theme mirrors every token.",
+    "keyCharacteristics": [
+      "One accent, ember orange, and one light source (the hero glow, echoed once by the closer).",
+      "Near-black blue-cast neutrals in dark, warm paper neutrals in light, with the same token names.",
+      "Mona Sans for everything readable, Geist Mono for numbers, counters and code. Both self-hosted, both free.",
+      "Soft layered shadows, 1px rules, rounded panels (20px), fully round buttons.",
+      "Logical properties throughout, so Arabic (RTL) needs no overrides; code stays left to right."
+    ],
+    "rules": [
+      { "name": "The One Ember Rule", "body": "Ember is the only hue in the system. Everything else is a neutral. If a second colour seems needed, use weight, size or the inverted Raised state instead.", "section": "colors" },
+      { "name": "The One Light Rule", "body": "Only the hero glows. The closer repeats it as a soft wash so the page ends where it began; the default model route may carry a faint ember shadow. Nothing else radiates.", "section": "colors" },
+      { "name": "The Mirrored Theme Rule", "body": "Every colour exists as a token pair (dark and light) under one name. Never hard-code a colour in a component; the theme switch must reach it.", "section": "colors" },
+      { "name": "The Heavy Head Rule", "body": "Headings are 620 to 650 with negative tracking and balanced wrapping; body and labels never go above 600, so the jump in weight carries the hierarchy.", "section": "typography" },
+      { "name": "The Sentence Case Rule", "body": "No uppercase anywhere, and labels carry no letter-spacing. Hierarchy comes from size and weight, not from shouting.", "section": "typography" },
+      { "name": "The Logical Side Rule", "body": "Use inline and block properties (margin-inline, inset-inline, border-inline-start, text-align: start) everywhere, so Arabic mirrors without overrides. Code, paths, terminal and diff mock-ups are dir=\"ltr\" and isolated.", "section": "layout" },
+      { "name": "The Translation Headroom Rule", "body": "Header items never shrink below their own text. Gaps close first, then links drop out at fixed widths; German and Russian labels run half as long again as English.", "section": "layout" },
+      { "name": "The Pooled Depth Rule", "body": "The deepest shadow (Elev 3) belongs to the product: the app window and its screenshots. Cards reach it only while hovered or when they are the recommended choice.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep ember to buttons, focus, selection, counters and small icons; use the inverted Raised state for \"selected\".",
+      "Do define every new colour as a dark and light token pair under one name.",
+      "Do use logical properties and keep code dir=\"ltr\", so Arabic mirrors with no extra rules.",
+      "Do tie motion to transform and opacity only, drive scroll effects from scroll position, and disable all of it under prefers-reduced-motion.",
+      "Do make interactive parts work before JavaScript (<details> menus, radio-input tabs).",
+      "Do let wide data (tables) scroll inside its own 12px bordered box rather than widening the page."
+    ],
+    "donts": [
+      "Don't add a second accent hue, or a glow anywhere but the hero and its echo in the closer.",
+      "Don't add kickers or eyebrow labels above headings; the heading speaks for itself.",
+      "Don't set labels in uppercase or with letter-spacing.",
+      "Don't let a header item shrink below its own text to make a translation fit.",
+      "Don't use hard offset shadows; depth is the soft Elev ramp."
+    ]
+  }
+}
