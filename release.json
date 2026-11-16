@@ -1,33 +1,58 @@
 {
-  "version": "3.0.11",
-  "build": 11,
-  "tag": "b-11",
-  "date": "2026-11-13",
+  "version": "3.0.12",
+  "build": 12,
+  "tag": "b-12",
+  "date": "2026-11-16",
   "stars": 7,
   "assets": {
     "windows-exe": {
       "name": "draggy_setup.exe",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/draggy_setup.exe",
-      "size": 67675821,
-      "sha512": "93bed605460c3866d34b8e16a2fe1ce9f9694cb90be0db4181de9f4a5ea0887e707c00b9f29c9ae59a1439a61f5f01eaa718b0fbcc104ecdf39705ef3a92e707"
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/draggy_setup.exe",
+      "size": 67711947,
+      "sha512": "812aaf5312c9090cfaa0bbe600dc38c29b0fbdcb4822cdfb5b7ad22ac2a21192c3639fbc19de49ad7e241723a6e5e9f92de8cbb4c590f2fd855853807a2efd01"
     },
     "macos-zip": {
-      "name": "Draggy-3.0.11-macos-arm64.zip",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/Draggy-3.0.11-macos-arm64.zip",
-      "size": 17266259
+      "name": "Draggy-3.0.12-macos-arm64.zip",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/Draggy-3.0.12-macos-arm64.zip",
+      "size": 17279885
     },
     "linux-deb": {
-      "name": "draggy_3.0.11-1_amd64.deb",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/draggy_3.0.11-1_amd64.deb",
-      "size": 7640396
+      "name": "draggy_3.0.12-1_amd64.deb",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/draggy_3.0.12-1_amd64.deb",
+      "size": 7679744
     },
     "linux-rpm": {
-      "name": "draggy-3.0.11-1.x86_64.rpm",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-11/draggy-3.0.11-1.x86_64.rpm",
-      "size": 9106017
+      "name": "draggy-3.0.12-1.x86_64.rpm",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/draggy-3.0.12-1.x86_64.rpm",
+      "size": 9156154
     }
   },
   "recent": [
+    {
+      "tag": "b-12",
+      "build": 12,
+      "version": "3.0.12",
+      "date": "2026-11-16",
+      "html_url": "https://github.com/Lucki74/draggy/releases/tag/b-12",
+      "notes": {
+        "updates": [
+          "Answers can show pictures the agent generated or found on the web, and each one opens in a viewer",
+          "Image generation can use a cloud model from a connected provider, picked in Settings next to the local models",
+          "Voice chat can speak with a cloud voice model and pick its voice",
+          "Statistics price each local turn at the OpenRouter rate of the model it is based on, and break the cost down by model",
+          "The image step in a chat folds into a dropdown once the picture is done",
+          "A message you sent to steer a running answer can be taken back and edited",
+          "Research marks a quote it could not find on the page and lists the sources of each run"
+        ],
+        "fixes": [
+          "A cloud model chosen as the default now opens with the app",
+          "A llama.cpp server left over from an earlier run no longer keeps an old context window",
+          "Web search during research waits for a provider to cool down instead of failing with no request",
+          "The browser pane opens when the agent visits a page",
+          "Voice chat no longer stops at \"Loading voice model\""
+        ]
+      }
+    },
     {
       "tag": "b-11",
       "build": 11,
@@ -68,30 +93,6 @@
         ],
         "fixes": [
           "Removed the broken Gemini account provider"
-        ]
-      }
-    },
-    {
-      "tag": "b-9",
-      "build": 9,
-      "version": "3.0.9",
-      "date": "2026-10-31",
-      "html_url": "https://github.com/Lucki74/draggy/releases/tag/b-9",
-      "notes": {
-        "updates": [
-          "Commands in Code mode can keep running as background terminal tasks while you keep chatting",
-          "The statistics tab is rebuilt, with a cost section, budgets and editable prices",
-          "Image generation accepts reference images",
-          "Provider model lists refresh on their own",
-          "AMD graphics cards can use the ROCm build of llama.cpp, switched on under Settings, Models (off by default)",
-          "The model list shows each model's format",
-          "Embedding models show an icon instead of a second tag",
-          "The message queue card is easier to read and use"
-        ],
-        "fixes": [
-          "The question tool works again in chat",
-          "Removed the Use for Chat and Use for Code buttons from model settings",
-          "Removed the new chat and extensions hints from settings"
         ]
       }
     }
