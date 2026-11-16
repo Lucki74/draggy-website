@@ -37,6 +37,8 @@ const target = process.env.DRAGGY_OUT ? resolve(process.env.DRAGGY_OUT) : join(r
 
 const SITE = "https://draggy.org";
 const REPO = "https://github.com/Lucki74/draggy";
+const WEB_REPO = "https://github.com/Lucki74/draggy-website";
+const DOCS_REPO = "https://github.com/Lucki74/draggy-docs";
 
 /**
  * The numbers the site quotes, in one file so none of them is typed twice. The three counts come
@@ -547,6 +549,8 @@ function footer(code, page, t, to) {
           <a href="${REPO}">${t("nav.source")}</a>
           <a href="${REPO}/releases">${t("nav.releases")}</a>
           <a href="${REPO}/issues">${t("nav.issues")}</a>
+          <a href="${WEB_REPO}">${t("nav.websiteSource")}</a>
+          <a href="${DOCS_REPO}">${t("nav.docsSource")}</a>
           <a href="${REPO}/blob/main/CONTRIBUTING.md">${t("nav.contribute")}</a>
           <a href="${REPO}/blob/main/SECURITY.md">${t("nav.security")}</a>
         </nav>
@@ -1158,6 +1162,8 @@ ${line(site("accessibility"), t("accessibility.title"), t("accessibility.descrip
 
 - [Source code](${REPO})
 - [Releases](${REPO}/releases)
+- [Website source](${WEB_REPO})
+- [Documentation source](${DOCS_REPO})
 `;
 }
 
