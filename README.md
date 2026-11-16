@@ -4,6 +4,8 @@ This repo is the website for Draggy, the free and open source desktop app that r
 
 It is published at https://draggy.org in English, French, Spanish and Russian.
 
+The source of [docs.draggy.org](https://docs.draggy.org) is in [Lucki74/draggy-docs](https://github.com/Lucki74/draggy-docs).
+
 ## Run it
 
 ```bash

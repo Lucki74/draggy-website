@@ -171,6 +171,8 @@
   "nav.compare": "Cómo se compara Draggy",
   "nav.stars": "Draggy en GitHub",
   "nav.issues": "Incidencias",
+  "nav.websiteSource": "Código del sitio",
+  "nav.docsSource": "Código de la documentación",
   "footer.product": "Producto",
   "footer.docs": "Documentación",
   "footer.project": "Proyecto",

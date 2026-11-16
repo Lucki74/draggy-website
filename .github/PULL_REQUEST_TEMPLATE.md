@@ -1,3 +1,5 @@
+<!-- App changes go to https://github.com/Lucki74/draggy and docs.draggy.org changes to https://github.com/Lucki74/draggy-docs. -->
+
 ## What changed
 <!-- One or two sentences. -->
 
