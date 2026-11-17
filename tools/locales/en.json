@@ -194,7 +194,7 @@
   "faq.q8": "Why does my computer warn me when I open it?",
   "faq.a8": "Draggy's build is not signed with a developer certificate yet. Windows shows a warning on the first run. The steps to get past it are on the <a href=\"{{clean:download}}#first-run\">download page</a>.",
   "faq.q9": "Does it update itself?",
-  "faq.a9": "Windows and Linux check for a new version at launch and every six hours. On Windows, Draggy offers the update and you start the install. macOS does not update itself yet, so download the new version from this page.",
+  "faq.a9": "Windows and Linux check for a new version at launch and every six hours. On Windows, an update found at launch installs in the startup window, and you can start without updating. macOS does not update itself yet, so download the new version from this page.",
   "faq.q10": "Which languages does it speak?",
   "faq.a10": "The app's screens are in English, French, Spanish and Russian. The natural voice speaks English, French and Spanish.",
   "hero.copyLink": "Copy link",

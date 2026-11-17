@@ -194,7 +194,7 @@
   "faq.q8": "Pourquoi mon ordinateur m'avertit-il à l'ouverture ?",
   "faq.a8": "La version de Draggy n'est pas encore signée avec un certificat d'éditeur. Windows affiche un avertissement au premier lancement. Les étapes pour passer outre sont sur la <a href=\"{{clean:download}}#first-run\">page de téléchargement</a>.",
   "faq.q9": "Se met-il à jour tout seul ?",
-  "faq.a9": "Windows et Linux recherchent une nouvelle version au lancement puis toutes les six heures. Sous Windows, Draggy vous propose la mise à jour et vous lancez l'installation. macOS ne se met pas encore à jour seul : téléchargez la nouvelle version depuis cette page.",
+  "faq.a9": "Windows et Linux recherchent une nouvelle version au lancement puis toutes les six heures. Sous Windows, une mise à jour trouvée au lancement s'installe dans la fenêtre de démarrage, et vous pouvez démarrer sans mettre à jour. macOS ne se met pas encore à jour seul : téléchargez la nouvelle version depuis cette page.",
   "faq.q10": "Quelles langues parle-t-il ?",
   "faq.a10": "Les écrans de l'application sont en anglais, français, espagnol et russe. La voix naturelle parle anglais, français et espagnol.",
   "hero.copyLink": "Copier le lien",
