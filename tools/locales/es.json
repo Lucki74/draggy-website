@@ -192,7 +192,7 @@
   "faq.q8": "¿Por qué mi ordenador me avisa al abrirlo?",
   "faq.a8": "La versión de Draggy todavía no está firmada con un certificado de desarrollador. Windows muestra un aviso en el primer inicio. Los pasos para continuar están en la <a href=\"{{clean:download}}#first-run\">página de descarga</a>.",
   "faq.q9": "¿Se actualiza solo?",
-  "faq.a9": "Windows y Linux buscan una versión nueva al iniciar y cada seis horas. En Windows, Draggy te ofrece la actualización y tú inicias la instalación. macOS todavía no se actualiza solo, así que descarga la nueva versión desde esta página.",
+  "faq.a9": "Windows y Linux buscan una versión nueva al iniciar y cada seis horas. En Windows, una actualización encontrada al iniciar se instala en la ventana de arranque, y puedes iniciar sin actualizar. macOS todavía no se actualiza solo, así que descarga la nueva versión desde esta página.",
   "faq.q10": "¿Qué idiomas habla?",
   "faq.a10": "Las pantallas de la aplicación están en inglés, francés, español y ruso. La voz natural habla inglés, francés y español.",
   "hero.copyLink": "Copiar enlace",
