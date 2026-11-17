@@ -1,33 +1,51 @@
 {
-  "version": "3.0.12",
-  "build": 12,
-  "tag": "b-12",
-  "date": "2026-11-16",
+  "version": "3.0.13",
+  "build": 13,
+  "tag": "b-13",
+  "date": "2026-11-17",
   "stars": 7,
   "assets": {
     "windows-exe": {
       "name": "draggy_setup.exe",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/draggy_setup.exe",
-      "size": 67711947,
-      "sha512": "812aaf5312c9090cfaa0bbe600dc38c29b0fbdcb4822cdfb5b7ad22ac2a21192c3639fbc19de49ad7e241723a6e5e9f92de8cbb4c590f2fd855853807a2efd01"
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-13/draggy_setup.exe",
+      "size": 67761045,
+      "sha512": "a3968145fa2b610a67d2d28a006780a57bddf0b7dfc8517f0da56b8c5ad4370b08d09678fcf2013b8101066184ced425f5648e95ac61bed874f53ee2f0953253"
     },
     "macos-zip": {
-      "name": "Draggy-3.0.12-macos-arm64.zip",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/Draggy-3.0.12-macos-arm64.zip",
-      "size": 17279885
+      "name": "Draggy-3.0.13-macos-arm64.zip",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-13/Draggy-3.0.13-macos-arm64.zip",
+      "size": 17278583
     },
     "linux-deb": {
-      "name": "draggy_3.0.12-1_amd64.deb",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/draggy_3.0.12-1_amd64.deb",
-      "size": 7679744
+      "name": "draggy_3.0.13-1_amd64.deb",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-13/draggy_3.0.13-1_amd64.deb",
+      "size": 7678468
     },
     "linux-rpm": {
-      "name": "draggy-3.0.12-1.x86_64.rpm",
-      "url": "https://github.com/Lucki74/draggy/releases/download/b-12/draggy-3.0.12-1.x86_64.rpm",
-      "size": 9156154
+      "name": "draggy-3.0.13-1.x86_64.rpm",
+      "url": "https://github.com/Lucki74/draggy/releases/download/b-13/draggy-3.0.13-1.x86_64.rpm",
+      "size": 9159821
     }
   },
   "recent": [
+    {
+      "tag": "b-13",
+      "build": 13,
+      "version": "3.0.13",
+      "date": "2026-11-17",
+      "html_url": "https://github.com/Lucki74/draggy/releases/tag/b-13",
+      "notes": {
+        "updates": [
+          "Draggy opens with a small startup window that checks for an update, downloads it with a progress line and restarts into the new version",
+          "During that download you can start without updating, and the app offers the same update later",
+          "After an update, the startup window shows the version you moved to"
+        ],
+        "fixes": [
+          "Every skill in the built-in library is installed, where only one of them used to land",
+          "Long messages in Cyrillic, Chinese and other non-Latin scripts are no longer treated as binary data"
+        ]
+      }
+    },
     {
       "tag": "b-12",
       "build": 12,
@@ -72,27 +90,6 @@
           "Node commands no longer hang in the sandbox and get retried for dozens of steps",
           "The administrator prompt for the sandbox appears once per machine, not at every launch",
           "Sandboxed commands can list the folders above the project, so PowerShell and `dir` work there"
-        ]
-      }
-    },
-    {
-      "tag": "b-10",
-      "build": 10,
-      "version": "3.0.10",
-      "date": "2026-11-09",
-      "html_url": "https://github.com/Lucki74/draggy/releases/tag/b-10",
-      "notes": {
-        "updates": [
-          "Draggy updates itself on Windows, macOS and Linux at startup",
-          "Every tool call shows live in the chat",
-          "Read only tool calls run in parallel",
-          "New deep research, fact check",
-          "Assistant turns are redesigned and way better",
-          "Russian replaces Chinese as an interface language",
-          "AMD graphics cards use the ROCm build of llama.cpp automatically"
-        ],
-        "fixes": [
-          "Removed the broken Gemini account provider"
         ]
       }
     }
