@@ -352,7 +352,7 @@
   "accessibility.lede": "Ce site vise à respecter le niveau AA des WCAG 2.2.",
   "accessibility.report": "Si vous le trouvez difficile à parcourir, <a href=\"https://github.com/Lucki74/draggy/issues\">signalez-le sur GitHub</a>.",
   "home.f7Title": "Fichiers",
-  "home.f7Text": "Déposez un tableur, un PDF ou une image dans la discussion et posez votre question.",
+  "home.f7Text": "Déposez un tableur, un PDF ou une image dans la discussion et posez votre question. Les vidéos aussi.",
   "home.f7Link": "Chat et Code",
   "home.f8Title": "Serveurs MCP",
   "home.f8Text": "Activez un serveur du catalogue et le modèle peut utiliser ses outils dès le message suivant.",

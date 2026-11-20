@@ -352,7 +352,7 @@
   "accessibility.lede": "Este sitio web aspira a cumplir el nivel AA de las WCAG 2.2.",
   "accessibility.report": "Si te resulta difícil de navegar, <a href=\"https://github.com/Lucki74/draggy/issues\">infórmalo en GitHub</a>.",
   "home.f7Title": "Archivos",
-  "home.f7Text": "Suelta una hoja de cálculo, un PDF o una imagen en el chat y pregunta sobre ello.",
+  "home.f7Text": "Suelta una hoja de cálculo, un PDF o una imagen en el chat y pregunta sobre ello. Los vídeos también funcionan.",
   "home.f7Link": "Chat y Code",
   "home.f8Title": "Servidores MCP",
   "home.f8Text": "Activa un servidor del catálogo y el modelo puede usar sus herramientas en el siguiente mensaje.",
